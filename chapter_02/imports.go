@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main(){
-	println("Printing without fmt")
-	fmt.Println("Printing with fmt")
+	currentTime := time.Now()
+	fmt.Printf("Current time is : %v\n", currentTime)
 }
